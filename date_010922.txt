@@ -1,0 +1,26 @@
+crate database database_name
+
+drop database database_name
+
+CREATE TABLE department(
+    dept_name varchar(20),
+    building varchar(20),
+    budget numeric(10,2),
+    PRIMARY KEY (dept_name)
+)
+
+CREATE TABLE instructor(
+    instructor_id char(5),
+    name varchar(20) not null,
+    department_name varchar(20),
+    salary numeric(8,2),
+    PRIMARY KEY (instructor_id),
+    FOREIGN KEY (department_name) REFERENCES department(dept_name)
+)
+
+alter table department add total_strudent int(4)
+alter table department drop total_strudent
+
+alter table department add total_strudent int(4) after building
+
+
