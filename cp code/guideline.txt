@@ -1,0 +1,115 @@
+A Complete Guideline to Competitive Programming 
+ 
+#Basic and STL 
+    1. Auto
+    2. Pair
+    3. Tuple
+    4. Struct
+    5. Pointers
+    6. String
+    7. Multidimensional array
+    8. Vector
+    9. List
+    10. Stack
+    11. Queue
+    12. Deque
+    13. Priority Queue
+    14. Set
+    15. Unordered set
+    16. Multiset
+    17. Map
+    18. Unordered map
+    19. Stringstream 
+
+#Number Theory 
+    1. Primes and Sieve
+    2. Factorization
+    3. GCD and LCM
+    4. Divisibility
+    5. Number of divisors
+    6. Co-primes
+    7. Euler Totient Function
+    8. Trick with subarray gcd
+    9. Segmented Sieve
+    10. Extended Euclid, Linear Diophantine
+    11. Inclusion Exclusion
+    12. Interactive problem
+    13. Bigmod
+    14. Modular inverse 
+    15. Fermat’s little theorem
+
+#Math 
+    1. Basic Math
+    2. Matrix Exponential
+    3. Expected value
+    4. Probability 
+
+#Data Structure 
+    1. Segment tree
+    2. Segment tree lazy
+    3. Binary index tree
+    4. Order statistics tree
+    5. Number of inversions
+    6. Sparse table
+    7. LCA and Binary lifting
+    8. Sqrt Decomposition
+    9. MO’S algorithm
+
+#Graph Theory 
+    1. Undirected or Directed graph
+    2. Adjacency matrix and lists
+    3. DFS and BFS 4. Directed array
+    5. Graph coloring 
+    6. Connected components 
+    7. Trees 8. DFS tree 
+    9. Diameter of a tree 
+    10. DSU (with or without rollback) 
+    11. Dijkstra 
+    12. Floyd warshall 
+    13. DSU small to large technique 
+    14. MST 
+    15. SCC, Articulation Points and Bridges 
+ 
+#DP 
+    1. Recursions 
+    2. 0/1 knapsack 
+    3. Longest common subsequence 
+    4. LIS 
+    5. DP with output tracking 
+    6. Knapsack using bitsets 
+    7. Kadane’s Algorithm 
+    8. SubString DP 
+    9. Iterative DP and Memory Optimization 
+    10. Queries on tree (Euler tour technique) 
+    11. DP with tree 
+    12. Bitmask DP 
+    13. SOS DP 
+    14. Digit DP 
+
+#Strings  
+    1. KMP 
+    2. Prefix Automation 
+    3. Z Algorithm 
+    4. String Hashing 
+    5. GP Hash table 
+    6. Trie 
+    7. Aho carsick 
+    8. Trie XOR max/min 
+    9. Suffix Array 
+
+#Miscelleneous 
+    1. Ternary Search 
+    2. Co-ordinate compression 
+    3. Pigeonhole Principle 
+    4. Greedy 
+    5. Activity selected problem 
+    6. Tow pointer 
+    7. Sliding window 
+    8. All nearest smaller elements 
+    9. Monotonous queue 
+    10. Game theory 
+    11. Grundy Numbers 
+    12. Constructive algorithm 
+    13. Difference array 
+    14. Backtracking 
+    15. Meet in the middle 
