@@ -22,5 +22,5 @@ alter table department add total_strudent int(4)
 alter table department drop total_strudent
 
 alter table department add total_strudent int(4) after building
-
+drop table table_name
 
