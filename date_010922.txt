@@ -3,19 +3,19 @@ crate database database_name
 drop database database_name
 
 CREATE TABLE department(
-    dept_name varchar(20),
-    building varchar(20),
-    budget numeric(10,2),
-    PRIMARY KEY (dept_name)
+  dept_name varchar(20),
+  building varchar(20),
+  budget numeric(10,2),
+  PRIMARY KEY (dept_name)
 )
 
 CREATE TABLE instructor(
-    instructor_id char(5),
-    name varchar(20) not null,
-    department_name varchar(20),
-    salary numeric(8,2),
-    PRIMARY KEY (instructor_id),
-    FOREIGN KEY (department_name) REFERENCES department(dept_name)
+  instructor_id char(5),
+  name varchar(20) not null,
+  department_name varchar(20),
+  salary numeric(8,2),
+  PRIMARY KEY (instructor_id),
+  FOREIGN KEY (department_name) REFERENCES department(dept_name)
 )
 
 alter table department add total_strudent int(4)
@@ -24,3 +24,42 @@ alter table department drop total_strudent
 alter table department add total_strudent int(4) after building
 drop table table_name
 
+CREATE TABLE loan (
+  loan_number varchar(20),
+  branch_name varchar(20),
+  ammount numeric(10,2),
+  PRIMARY KEY (loan_number)
+)
+
+CREATE TABLE borrow (
+  customer_name varchar(20),
+  loan_number varchar(20)
+)
+
+INSERT INTO loan(loan_number, branch_name, ammount)
+VALUES('L-170', 'Downtown', 3000.00)
+
+INSERT INTO loan
+VALUES('L-230', 'RedWood', 4000.00)
+
+INSERT INTO loan
+VALUES('L-260', 'Perryridge', 4000.00)
+
+INSERT INTO borrow
+VALUES ('Jones', 'L-127'), ('Smith', 'L-230'), ('Hayes', 'L-155')
+
+DELETE FROM loan
+WHERE loan_number = 'L-256'
+
+UPDATE loan
+SET branch_name = 'gopalganj',
+  ammount = 3000.00
+WHERE loan_number = 'L-170'
+
+SELECT loan_number, branch_name, ammount FROM loan
+WHERE branch_name = 'gopalganj'
+
+SELECT customer_name
+FROM loan, borrow
+WHERE loan.branch_name='gopalganj' and loan.loan_number = borrow.loan_number
+    
