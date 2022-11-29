@@ -33,7 +33,7 @@ int main() {
     cout << "Process " << i << " waiting time = " << waitingTime[i] << endl;
     cout << "Process " << i << " turn around time = " << turnAroundTime[i] << endl;
   }
-  cout << nl;
+  cout << endl;
   cout << "Average waiting time =  " << averageWaitingTime << endl;
   cout << "Average turn around time " << averageTurnAroundTime << endl;
   return 0;
